@@ -69,7 +69,7 @@ def convert(old):
 
 
 if __name__ == '__main__':
-    data = load_math_folder('../prm800k/data')
+    data = load_math_folder('../../prm800k/data')
     new_data = convert(data)
     print(len(new_data))
     with open('prm800k_vicuna_format.jsonl', 'w') as g:
